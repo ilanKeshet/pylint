@@ -146,7 +146,7 @@ class UpperCaseStyle(NamingStyle):
 
     CLASS_NAME_RGX = re.compile(r"[^\W\da-z][^\Wa-z]+$")
     MOD_NAME_RGX = re.compile(r"[^\W\da-z][^\Wa-z]+$")
-    CONST_NAME_RGX = re.compile(r"([^\W\da-z][^\Wa-z]*|__.*__)$")
+    CONST_NAME_RGX = re.compile(r"([^\W\d][^\Wa-z]*|__.*__)$")
     COMP_VAR_RGX = re.compile(r"[^\W\da-z][^\Wa-z]+$")
     DEFAULT_NAME_RGX = re.compile(r"([^\W\da-z][^\Wa-z]{2,}|__[^\W\dA-Z_]\w+__)$")
     CLASS_ATTRIBUTE_RGX = re.compile(r"[^\W\da-z][^\Wa-z]{2,}$")
